@@ -1,0 +1,17 @@
+#LimitRange set the max,min and default cpu and memory values to the pod or container inside a namespace.
+
+
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: team-a-limit
+  namespace: team-a
+spec:
+  limits: 
+    -type: container
+      defaultRequest:
+        cpu: "100m"
+        memory: "128Mi"
+       default:
+        cpu: "300m"
+        memory: "256Mi"
