@@ -7,3 +7,4 @@ spec:
   containers:
     -name: ngnix123
      image: ngnix
+#kubectl config set-context --current --namespace=test
