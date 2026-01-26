@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: my-pod
+  namespace: my-namespace
+spec: 
+  containers:
+    -name: ngnix123
+     image: ngnix
