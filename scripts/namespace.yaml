@@ -1,0 +1,16 @@
+apiVersion: V1
+kind: Namespace
+metadata: 
+  name:  my-namespace
+  labels: 
+    name: my-namespace
+---
+
+#kubectl create namespace my-namespace 
+
+#kubectl create namespace my-namespace
+#kubectl create namespace "name-space"
+#kubectl get namespace or kubectl get ns
+#kubectl describe ns my-namespace
+#kubectl delete namespace my-namespace
+#
