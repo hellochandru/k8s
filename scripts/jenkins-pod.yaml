@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: jenkins-pod
+  namespace: my-test
+  lables: 
+   app: Jenkins
+spec:
+  containers:
+  -name: jenkins
+   image:
+   ports:
+     - containerPort: 8080
+     - containerPort: 50000
