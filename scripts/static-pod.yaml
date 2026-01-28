@@ -9,3 +9,7 @@ spec:
    image: ngnix:latest
    port:
     -containerPort: 8000
+
+   #place the static pod in this location /etc/kubernetes/manifests/ "sudo mv nginx-static-pod.yaml /etc/kubernetes/manifests/"
+   #once yaml is placed kubectl detect the yaml and create a pod. we can check the status kubectl get pods --all-namespaces.
+   
